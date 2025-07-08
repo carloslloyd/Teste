@@ -1,0 +1,101 @@
+:root {
+  --verde-perso: rgb(0, 92, 46);
+  --verde-perso-hover: rgb(0, 133, 66);
+}
+
+/* Whatsapp */
+
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.whatsapp-fixo img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  height: 400px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+}
+
+.footer-img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#footer-texto {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.endereco-telefone {
+  color: white;
+  text-align: start;
+  width: 50%;
+  padding-top: 100px;
+}
+
+.endereco-telefone img {
+  width: 50px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.texto-aviso {
+  color: white;
+  width: 30%;
+  padding-top: 100px;
+  font-size: x-small;
+}
+
+/* fale com um consultor */
+
+#ref {
+  position: absolute;
+  top: 0px;
+}
+
+#fale-consultor {
+  background-color: var(--verde-perso);
+  font-size: 4vh;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 18px;
+  text-decoration: none;
+  color: white;
+  writing-mode: vertical-lr;
+  position: fixed;
+  top: 45%;
+  right: -22px;
+  transform: translateY(-50%) rotate(180deg);
+  z-index: 1;
+  border-radius: 10px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+#fale-consultor.visivel {
+  opacity: 1;
+  pointer-events: auto; /* permite clique quando visível */
+}

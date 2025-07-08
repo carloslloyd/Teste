@@ -1,0 +1,127 @@
+:root {
+  --verde-perso: rgb(0, 92, 46);
+  --verde-perso-hover: rgb(0, 133, 66);
+}
+
+.py-4 img {
+  filter: brightness(65%);
+  text-shadow: 0 0 3px #ffffff;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+#carouselGrid-mobile {
+  display: none;
+}
+
+#carouselGrid-mobile img {
+  filter: brightness(65%);
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Bloco 7 */
+
+.special img {
+  filter: brightness(100%) !important;
+}
+
+.botoes-escondidos {
+  display: none;
+}
+
+.info-title-especial {
+  margin-left: 10vw;
+  margin-bottom: 0;
+  margin-top: 15vh;
+  filter: opacity(70%);
+}
+
+.carousel-container-especial {
+  width: 95vw;
+  margin: 10vh auto;
+}
+
+/* Bloco 8 */
+
+#bloco-status-obra {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 15vh;
+}
+
+.info-title-especial-status {
+  text-align: center;
+  filter: opacity(70%);
+  font-size: 50px;
+}
+
+#bloco-status-obra h2 {
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+}
+
+.progress {
+  width: 400px;
+  height: 5vh;
+  border: 1px solid rgb(0, 92, 46);
+  border-radius: 0;
+}
+
+/* Bloco 9 */
+
+#bloco-localizacao {
+  height: auto;
+  background-color: var(--verde-perso);
+  padding: 40px 0;
+}
+
+#bloco-localizacao .overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+#loc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.info-title-especial-loc {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+#loc h3 {
+  font-size: 15px;
+}
+
+#loc a {
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 0;
+  font-size: small;
+}
+
+#loc-texto {
+  width: 60%;
+}
+
+#loc-texto p {
+  font-size: 14px;
+}

@@ -1,0 +1,58 @@
+:root {
+  --fonte-importada: "DM Serif Text";
+  --verde-perso: rgb(0, 92, 46);
+  --verde-perso-hover: rgb(0, 133, 66);
+  --fonte-Gotham-Bold: "GothamBold";
+  --fonte-Gotham-Medium: "GothamMedium";
+}
+
+#info-inicial {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding-bottom: 10vh;
+}
+
+#info-inicial img {
+  /* Quando trocar a img pra correta funciona */
+  height: auto;
+  width: 40vw;
+  max-height: 100vh;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+#info-inicial-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 12%;
+  padding-top: 8%;
+  width: 100%;
+  height: auto;
+  filter: opacity(70%);
+  justify-content: center;
+}
+
+.info-title {
+  font-family: var(--fonte-Gotham-Bold) !important;
+  font-weight: 600;
+}
+
+.info-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 30vw;
+  font-size: 17px;
+}
+
+.info-texto span:first-child {
+  color: var(--verde-perso);
+  font-weight: 600;
+}

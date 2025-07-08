@@ -1,0 +1,341 @@
+:root {
+  --fonte-importada: "DM Serif Text";
+  --verde-perso: rgb(0, 92, 46);
+  --verde-perso-hover: rgb(0, 133, 66);
+}
+
+@media (min-width: 1600px) {
+  form {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1215px) {
+  form {
+    width: 35vw;
+  }
+
+  #fale-consultor {
+    background-color: var(--verde-perso);
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    writing-mode: horizontal-tb;
+    position: fixed;
+    top: -10px;
+    right: 2px;
+    transform: none;
+    z-index: 1;
+    border-radius: 10px;
+    font-family: var(--fonte-importada-roboto);
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #fale-consultor.visivel {
+    opacity: 1;
+    pointer-events: auto; /* permite clique quando visível */
+  }
+}
+
+@media (max-width: 1025px) {
+  #espaco-form-mobile {
+    display: block;
+    background-color: var(--verde-perso);
+    height: 80vh;
+    width: 100%;
+    filter: brightness(40%);
+  }
+
+  .logo-jardins156 {
+    top: 30vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 45vw;
+  }
+
+  .logo {
+    width: 170px;
+    left: 2%;
+    transform: none;
+  }
+
+  form {
+    top: 110vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+  }
+
+  .banner {
+    height: 70vh;
+  }
+
+  #info-inicial {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #info-inicial-texto {
+    gap: 15px;
+    padding: 50px 0px;
+    width: 60vw;
+    height: auto;
+  }
+
+  .info-texto {
+    gap: 20px;
+    max-width: 60vw;
+    font-size: 17px;
+  }
+
+  #info-inicial img {
+    /* Quando trocar a img pra correta funciona */
+    width: 100vw;
+    max-height: none;
+  }
+
+  footer {
+    height: 450px;
+  }
+
+  #footer-texto {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .endereco-telefone {
+    text-align: center;
+    padding-top: 140px;
+    height: 75%;
+  }
+
+  .endereco-telefone img {
+    margin-top: 20px;
+  }
+
+  .texto-aviso {
+    width: 70%;
+    padding-top: 0px;
+    height: 25%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 860px) {
+  #bloco-localizacao .overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #loc-texto {
+    width: 80%;
+  }
+
+  footer {
+    height: 500px;
+  }
+
+  .endereco-telefone {
+    text-align: center;
+    padding-top: 130px;
+    height: 65%;
+    width: 100%;
+  }
+
+  .endereco-telefone img {
+    margin-top: 20px;
+  }
+
+  .texto-aviso {
+    width: 70%;
+    padding-top: 0px;
+    height: 35%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .py-4 {
+    display: none;
+  }
+
+  #carouselGrid-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner {
+    height: 60vh;
+  }
+
+  .logo-jardins156 {
+    top: 27vh;
+    width: 50vw;
+  }
+
+  form {
+    top: 100vh;
+    width: 55vw;
+  }
+
+  #bloco-imagem-interativa {
+    display: none;
+  }
+
+  .carousel-container {
+    margin: 10vh auto;
+  }
+
+  .carousel-container-especial {
+    margin: 10vh auto;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    transform: scale(0.7);
+  }
+
+  #info-inicial {
+    padding-bottom: 0;
+  }
+
+  #bloco-carrosel {
+    height: auto;
+  }
+
+  .next-especial {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .logo-jardins156 {
+    top: 23vh;
+    width: 50vw;
+  }
+
+  form {
+    top: 90vh;
+    width: 65vw;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .footer-img {
+    width: 250px;
+  }
+
+  .endereco-telefone {
+    padding-top: 120px;
+    height: 60%;
+  }
+
+  .endereco-telefone img {
+    margin-top: 15px;
+  }
+
+  .texto-aviso {
+    width: 80%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 580px) {
+  .botoes-especiais-verdes {
+    display: none;
+  }
+
+  .botoes-escondidos {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-inner img {
+    width: 100%;
+    max-height: 22vh; /* altura máxima */
+    object-fit: contain;
+    filter: brightness(80%);
+  }
+
+  .banner {
+    height: 35vh;
+  }
+
+  .logo-jardins156 {
+    top: 18vh;
+    width: 65vw;
+  }
+
+  form {
+    top: 75vh;
+    width: 75vw;
+  }
+
+  #carouselGrid-mobile img {
+    height: 180px;
+  }
+
+  .info-title-especial {
+    margin-top: 10vh;
+    font-size: 30px;
+  }
+
+  .info-title-especial-status {
+    margin-top: 3vh;
+    font-size: 40px;
+  }
+
+  .progress {
+    width: 280px;
+  }
+
+  footer {
+    height: 550px;
+  }
+
+  .endereco-telefone {
+    padding-top: 110px;
+    height: 55%;
+  }
+
+  .endereco-telefone img {
+    margin-top: 12px;
+  }
+
+  .texto-aviso {
+    width: 85%;
+    height: 45%;
+  }
+}
+
+@media (max-width: 450px) and (max-height: 570px) {
+  #form-title {
+    font-size: medium;
+  }
+
+  #form-inputs {
+    gap: 18px;
+    font-size: smaller;
+  }
+
+  .form-check-label {
+    font-size: 10px;
+  }
+
+  .btn-primary {
+    font-size: smaller;
+  }
+}

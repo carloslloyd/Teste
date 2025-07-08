@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- script de monitoramento do google usada pelo time de marketing -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M4DRVRH");
+    </script>
+
+    <!-- Titulo da Pagina -->
+    <title>Jardins156</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="zoom.css" />
+    <link rel="stylesheet" href="footer-icones.css" />
+    <link rel="stylesheet" href="bloco6-7-8-9.css" />
+    <link rel="stylesheet" href="bloco4-5.css" />
+    <link rel="stylesheet" href="bloco3.css" />
+    <link rel="stylesheet" href="bloco1-2.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <link rel="shortcut icon" href="imgs/favi_icon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- script de monitoramento do google usada pelo time de marketing -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M4DRVRH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <main>
+      <!-- Bloco 1 -->
+      <section id="intro">
+        <!-- Imagens da Logo e Banner -->
+        <img
+          src="imgs/logo-janeiro-branco.svg"
+          class="img-fluid logo"
+          alt="logo-janeiro"
+        />
+        <img
+          src="imgs/banner-1920x1080.jpg"
+          class="img-fluid banner"
+          alt="banner-jardins156"
+        />
+        <img
+          src="imgs/logo-jardins156.png"
+          class="img-fluid logo-jardins156"
+          alt="logo-jardins156"
+        />
+
+        <!-- Formulario de Contato -->
+        <form id="formulario" action="agradecimento.html">
+          <!-- Inputs escondidos para envio de UTMs -->
+          <input type="hidden" id="utm_source" name="origem" />
+          <input type="hidden" id="utm_medium" name="midia" />
+          <input type="hidden" id="utm_campaign" name="conversao" />
+
+          <h1 id="form-title">Fale com um consultor</h1>
+
+          <!-- Inputs do Formulario -->
+          <div id="form-inputs">
+            <div class="inputs-form">
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Nome Completo"
+                required
+              />
+              <br />
+            </div>
+
+            <div class="inputs-form">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+              <br />
+            </div>
+
+            <!-- pattern = padrão pra reconhecer formato válido (31999999999) -->
+            <div class="inputs-form">
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                pattern="^\(?\d{2}\)?[\s]?\d{4,5}[\s]?\d{4}$"
+                placeholder="DDD+telefone"
+                required
+              />
+              <br />
+            </div>
+
+            <!-- Checkboxes -->
+            <div id="checkbox-form">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="aceito"
+                  id="aceito-check1"
+                  required
+                />
+                <label class="form-check-label" for="aceito-check1">
+                  Declaro que li e aceito os termos da
+                  <a
+                    href="https://janeiroengenharia.com.br/politica-de-privacidade/"
+                    target="_blank"
+                    >Política de Privacidade</a
+                  >
+                  do Grupo Janeiro
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="aceito"
+                  id="aceito-check2"
+                  required
+                />
+                <label class="form-check-label" for="aceito-check2">
+                  Estou de acordo em receber comunicaÃ§Ãµes e ser acessado por
+                  um possivel atendimento
+                </label>
+              </div>
+            </div>
+
+            <!-- Botão de envio -> Integrado com o "script.js" -->
+            <button
+              id="button-form"
+              type="submit"
+              class="btn btn-primary"
+              style="border-radius: 0"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Bloco 2 (so-mobile)-->
+      <section id="espaco-form-mobile"></section>
+
+      <!-- Bloco 3 -->
+      <section id="info-inicial">
+        <img
+          src="imgs/piscina-866x1060.jpg"
+          class="img-fluid banner-area-lazer"
+          alt="img-bloco-3"
+        />
+
+        <div id="info-inicial-texto">
+          <h1 class="info-title info-title-especial-info">Jardins 156</h1>
+          <p class="info-texto">
+            <span>
+              Na 5Âª rua mais valorizada de Belo Horizonte, no ponto mais
+              cobiÃ§ado do Buritis, nasce um projeto exclusivo.
+              <br /><br />
+              Um condomÃ­nio de casas de alto padrÃ£o que eleva o conceito de
+              bem-estar com elegÃ¢ncia e inovaÃ§Ã£o.
+            </span>
+            <span>
+              Liberdade, seguranÃ§a e qualidade de vida se revelam em cada
+              detalhe. Um espaÃ§o pensado para vocÃª viver seus melhores
+              momentos, cercado de tranquilidade, conforto e tudo o que sua
+              famÃ­lia merece.
+            </span>
+            <span>
+              Assinado pela Janeiro Engenharia, este Ã© mais do que um
+              endereÃ§o. Ã‰ um investimento em qualidade de vida.
+            </span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Bloco 4 -->
+      <section id="bloco-imagem-interativa">
+        <div class="overlay"></div>
+        <h2>
+          Um condomÃ­nio fechado de casas com a assinatura DÃ¡vila Arquitetura.
+          Esse Ã© o Jardins 156. Seja bem-vindo.
+        </h2>
+      </section>
+
+      <!-- Bloco 5 - Carrosel -->
+      <section id="bloco-carrosel">
+        <div class="carousel-container">
+          <div
+            id="carouselId"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img
+                  src="imgs/CASA1.jpg"
+                  class="w-100 d-block"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/CASA2.jpg"
+                  class="w-100 d-block"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/CASA3.jpg"
+                  class="w-100 d-block"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselId"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloco 6 -->
+      <section id="bloco-carrosel-grid" style="background-color: white">
+        <!-- Desktop -->
+        <div class="container py-4">
+          <div class="row g-3">
+            <!-- Imagem 1 -->
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img
+                  src="imgs/LAZER1.jpg"
+                  class="d-block mx-auto"
+                  alt="Imagem 1"
+                />
+                <p
+                  class="text-white position-absolute bottom-0 m-0 p-1"
+                  style="left: 20px"
+                >
+                  Pet Place
+                </p>
+              </div>
+            </div>
+
+            <!-- Imagem 2 -->
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img
+                  src="imgs/LAZER2.jpg"
+                  class="d-block mx-auto"
+                  alt="Imagem 2"
+                />
+                <p
+                  class="text-white position-absolute bottom-0 m-0 p-1"
+                  style="left: 20px"
+                >
+                  SalÃ£o de Festas
+                </p>
+              </div>
+            </div>
+
+            <!-- Imagem 3 -->
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img
+                  src="imgs/LAZER3.jpg"
+                  class="d-block mx-auto"
+                  alt="Imagem 3"
+                />
+                <p
+                  class="text-white position-absolute bottom-0 m-0 p-1"
+                  style="left: 20px"
+                >
+                  Quadra de Beach Tennis
+                </p>
+              </div>
+            </div>
+
+            <!-- Imagem 4 -->
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img
+                  src="imgs/LAZER4.jpg"
+                  class="d-block mx-auto"
+                  alt="Imagem 4"
+                />
+                <p
+                  class="text-white position-absolute bottom-0 m-0 p-1"
+                  style="left: 20px"
+                >
+                  Playground
+                </p>
+              </div>
+            </div>
+
+            <!-- Imagem 5 -->
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img
+                  src="imgs/LAZER5.jpg"
+                  class="d-block mx-auto"
+                  alt="Imagem 5"
+                />
+                <p
+                  class="text-white position-absolute bottom-0 m-0 p-1"
+                  style="left: 20px"
+                >
+                  EspaÃ§o Gourmet
+                </p>
+              </div>
+            </div>
+
+            <!-- Imagem 6 -->
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img
+                  src="imgs/LAZER6.jpg"
+                  class="d-block mx-auto"
+                  alt="Imagem 6"
+                />
+                <p
+                  class="text-white position-absolute bottom-0 m-0 p-1"
+                  style="left: 20px"
+                >
+                  EspaÃ§o Fitness
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div
+          id="carouselGrid-mobile"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row g-0">
+                  <div class="col-6">
+                    <div class="position-relative">
+                      <img
+                        src="imgs/LAZER1.jpg"
+                        class="d-block mx-auto"
+                        alt="Imagem 1"
+                      />
+                      <p
+                        class="text-white position-absolute bottom-0 m-0 p-1"
+                        style="left: 20px"
+                      >
+                        Kids
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="position-relative">
+                      <img
+                        src="imgs/LAZER2.jpg"
+                        class="d-block mx-auto"
+                        alt="Imagem 2"
+                      />
+                      <p
+                        class="text-white position-absolute bottom-0 m-0 p-1"
+                        style="left: 20px"
+                      >
+                        SalÃ£o Gourmet
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row g-0">
+                  <div class="col-6">
+                    <div class="position-relative">
+                      <img
+                        src="imgs/LAZER3.jpg"
+                        class="d-block mx-auto"
+                        alt="Imagem 3"
+                      />
+                      <p
+                        class="text-white position-absolute bottom-0 m-0 p-1"
+                        style="left: 20px"
+                      >
+                        Quadra de Areia
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="position-relative">
+                      <img
+                        src="imgs/LAZER4.jpg"
+                        class="d-block mx-auto"
+                        alt="Imagem 4"
+                      />
+                      <p
+                        class="text-white position-absolute bottom-0 m-0 p-1"
+                        style="left: 20px"
+                      >
+                        Area Aberta
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row g-0">
+                  <div class="col-6">
+                    <div class="position-relative">
+                      <img
+                        src="imgs/LAZER5.jpg"
+                        class="d-block mx-auto"
+                        alt="Imagem 5"
+                      />
+                      <p
+                        class="text-white position-absolute bottom-0 m-0 p-1"
+                        style="left: 20px"
+                      >
+                        Varanda Gourmet
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="position-relative">
+                      <img
+                        src="imgs/LAZER6.jpg"
+                        class="d-block mx-auto"
+                        alt="Imagem 6"
+                      />
+                      <p
+                        class="text-white position-absolute bottom-0 m-0 p-1"
+                        style="left: 20px"
+                      >
+                        EspaÃ§o Fitness
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <!-- Seta Esquerda-->
+          <button
+            class="carousel-control-prev botoes-especiais-verdes"
+            type="button"
+            data-bs-target="#carouselGrid-mobile"
+            data-bs-slide="prev"
+          >
+            <span class="custom-icon" aria-hidden="true">
+              <!-- Seta esquerda mais grossa -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="green"
+                stroke-width="2"
+                width="40"
+                height="40"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <!-- Seta direita -->
+          <button
+            class="carousel-control-next botoes-especiais-verdes"
+            type="button"
+            data-bs-target="#carouselGrid-mobile"
+            data-bs-slide="next"
+          >
+            <span class="custom-icon" aria-hidden="true">
+              <!-- Seta direita mais grossa -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="green"
+                stroke-width="2"
+                width="40"
+                height="40"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5L15.75 12l-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <span class="visually-hidden">PrÃ³ximo</span>
+          </button>
+
+          <!-- Seta esquerda escondida -->
+          <button
+            class="carousel-control-prev botoes-escondidos"
+            type="button"
+            data-bs-target="#carouselGrid-mobile"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <!-- Seta direita escondida -->
+          <button
+            class="carousel-control-next botoes-escondidos"
+            type="button"
+            data-bs-target="#carouselGrid-mobile"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Bloco 7 -->
+      <section id="bloco-carrosel-planta">
+        <h1 class="info-title info-title-especial">
+          ImplantaÃ§Ã£o Jardins 156
+        </h1>
+        <div class="carousel-container-especial">
+          <div
+            id="carouselId-plantas"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-inner special" role="listbox">
+              <div class="carousel-item active">
+                <img
+                  src="imgs/planta_jacaranda.png"
+                  class="d-block"
+                  style="width: 80vw; margin: 0 auto; display: block"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/planta_lotus.png"
+                  class="d-block"
+                  style="width: 80vw; margin: 0 auto; display: block"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/planta_orquidea.png"
+                  class="d-block"
+                  style="width: 80vw; margin: 0 auto; display: block"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/planta_implantacao.png"
+                  class="d-block"
+                  style="width: 80vw; margin: 0 auto; display: block"
+                  alt="Fourth slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/planta_implantacao_lazer.png"
+                  class="d-block"
+                  style="width: 80vw; margin: 0 auto; display: block"
+                  alt="Fifthy slide"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselId-plantas"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                style="
+                  filter: brightness(0) saturate(100%) invert(39%) sepia(87%)
+                    saturate(372%) hue-rotate(83deg) brightness(92%)
+                    contrast(93%);
+                "
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next next-especial"
+              type="button"
+              data-bs-target="#carouselId-plantas"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                style="
+                  filter: brightness(0) saturate(100%) invert(39%) sepia(87%)
+                    saturate(372%) hue-rotate(83deg) brightness(92%)
+                    contrast(93%);
+                "
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloco 8 -->
+      <section id="bloco-status-obra">
+        <h1 class="info-title info-title-especial-status">Status Obra</h1>
+        <h2>PrevisÃ£o de entrega: Abril 2026</h2>
+        <div class="progress" style="background-color: white">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 69%; background-color: rgb(0, 92, 46)"
+            aria-valuenow="69"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            69%
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloco 9 (LocalizaÃ§Ã£o) -->
+      <section id="bloco-localizacao">
+        <div class="overlay">
+          <div id="loc">
+            <h1 class="info-title info-title-especial-loc">LocalizaÃ§Ã£o</h1>
+            <h3>Av. JosÃ© de Oliveira Vaz, 156</h3>
+            <a
+              class="btn btn-primary"
+              href="https://www.google.com/maps?q=Av.+Jos%C3%A9+de+Oliveira+Vaz,+156"
+              role="button"
+              target="_blank"
+              >VER MAPA</a
+            >
+          </div>
+          <div id="loc-texto">
+            <p>Viva em um dos endereÃ§os mais nobres de Belo Horizonte.</p>
+            <p>
+              Com infraestrutura completa, fÃ¡cil acesso Ã s principais vias,
+              comÃ©rcio qualificado, serviÃ§os essenciais e uma atmosfera
+              residencial acolhedora, o Buritis oferece o equilÃ­brio perfeito
+              entre conveniÃªncia e tranquilidade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Foto -->
+      <picture>
+        <img
+          src="imgs/FACHADA_COMERCIAL.jpg"
+          class="img-fluid"
+          alt="banner-fachada-comercial"
+        />
+      </picture>
+
+      <!-- Whatsapp -->
+      <a
+        href="https://wa.me/5531992810084"
+        class="whatsapp-fixo"
+        target="_blank"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+          alt="WhatsApp"
+        />
+      </a>
+
+      <!-- Fale com um consultor -->
+      <p id="ref">.</p>
+      <a href="#ref" id="fale-consultor"> Fale com um consultor </a>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+      <img
+        src="imgs/logo-jardins156.png"
+        class="img-fluid footer-img"
+        alt="logo-janeiro-footer"
+      />
+      <div id="footer-texto">
+        <div class="endereco-telefone">
+          <p>EndereÃ§o: Rua JosÃ© de Oliveira Vaz, 156. Buritis</p>
+          <p>Telefone: +55 31 99281-0084</p>
+          <a
+            href="https://www.instagram.com/janeiroengenharia/"
+            target="_blank"
+          >
+            <img src="imgs/instagram.png" alt="instagram" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/janeiro-engenharia"
+            target="_blank"
+          >
+            <img src="imgs/linkedin.png" alt="linkedin" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCEGVezA4LAIZLmmzEEInR0A"
+            target="_blank"
+          >
+            <img src="imgs/youtube.png" alt="youtube" />
+          </a>
+        </div>
+        <div class="texto-aviso">
+          <p>
+            As imagens e plantas contidas nesta peÃ§a tÃªm carÃ¡ter
+            exclusivamente ilustrativo e artÃ­stico, para divulgaÃ§Ã£o do
+            empreendimento, por se tratar de um bem ainda a ser construÃ­do. O
+            mobiliÃ¡rio e os equipamentos constantes nestas imagens e plantas
+            nÃ£o fazem parte do Contrato de Compra e Venda, uma vez que nesse
+            prevalece apenas os itens que estÃ£o especificados no Memorial
+            Descritivo. Os materiais e cores representados poderÃ£o sofrer
+            alteraÃ§Ãµes ao longo da execuÃ§Ã£o do projeto de construÃ§Ã£o em
+            funÃ§Ã£o da disponibilidade destes no mercado. Em virtude de
+            conveniÃªncia tÃ©cnica, as dimensÃµes, esquadrias e layouts poderÃ£o
+            ser ajustados a critÃ©rio da Janeiro Engenharia. O memorial
+            descritivo do cliente prevalece sobre todos os materiais de
+            divulgaÃ§Ã£o. Memorial de IncorporaÃ§Ã£o registrado junto ao
+            CartÃ³rio do 10 OfÃ­cio RIBH sob o n0 R-4, da matrÃ­cula 162.694.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+
+    <!-- Modal de Zoom -->
+    <div id="zoomModal" class="zoom-modal" onclick="closeZoom()">
+      <span class="zoom-close">&times;</span>
+      <img class="zoom-content" id="zoomImg" />
+    </div>
+  </body>
+</html>

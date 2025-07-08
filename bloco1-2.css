@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "GothamBold";
+  font-weight: bold;
+  src: url("GOTHAM-BOLD.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("GOTHAM-MEDIUM.TTF") format("truetype");
+}
+
+:root {
+  --verde-perso: rgb(0, 92, 46);
+  --verde-perso-hover: rgb(0, 133, 66);
+  --fonte-Gotham-Bold: "GothamBold";
+  --fonte-Gotham-Medium: "GothamMedium";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-Gotham-Medium);
+}
+
+main {
+  position: relative;
+}
+
+.logo {
+  z-index: 1;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.banner {
+  z-index: 0;
+  width: 100%;
+  height: 85vh;
+  filter: brightness(70%);
+  object-fit: cover;
+}
+
+.logo-jardins156 {
+  z-index: 1;
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  width: 20vw;
+}
+
+form {
+  z-index: 1;
+  position: absolute;
+  top: 45vh;
+  transform: translateY(-50%);
+  right: 10vw;
+  background-color: white;
+  width: 25vw;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#form-title {
+  font-size: larger;
+  font-family: var(--fonte-Gotham-Bold) !important;
+}
+
+#form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  font-size: small;
+}
+
+.inputs-form {
+  width: 100%;
+}
+
+.inputs-form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.inputs-form input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--verde-perso);
+}
+
+#checkbox-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-check {
+  width: 90%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.form-check-input {
+  border: 1px solid black;
+  cursor: pointer;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+.form-check-input:checked {
+  background-color: var(--verde-perso); /* verde preenchido */
+  border-color: var(--verde-perso);
+}
+
+.form-check-label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--verde-perso);
+  width: 35%;
+  border-radius: 14px;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--verde-perso-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--verde-perso-hover) !important;
+}
+
+#espaco-form-mobile {
+  display: none;
+}

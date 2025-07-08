@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "GothamMedium";
+  src: url("GOTHAM-MEDIUM.TTF") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "GothamMedium";
+  background-color: #f9f9f9;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+/* Lado esquerdo */
+#left {
+  width: 50%;
+  background-color: #005c2e;
+  position: relative;
+}
+
+#left img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1.5px solid white;
+  color: white;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: white;
+  color: #005c2e;
+}
+
+/* Lado direito */
+#right {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#right h1 {
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+
+  #left {
+    width: 100%;
+    height: 50%;
+    background-color: #005c2e;
+    position: relative;
+  }
+
+  #right {
+    width: 100%;
+    height: 50%;
+  }
+
+  #left img {
+    width: 280px;
+  }
+
+  #right h1 {
+    font-size: 1.5rem;
+  }
+}
